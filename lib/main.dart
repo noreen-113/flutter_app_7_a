@@ -1,15 +1,263 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
-      home: Center(
-        child: Text('Hello noreen', textDirection: TextDirection.ltr),
-      ),
-    ),
-  );
+  runApp(MyApp());
 }
-//
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('My app stateless'),
+          centerTitle: true,
+          backgroundColor: Colors.limeAccent,
+        ),
+        body: SafeArea(
+          child: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(20),
+                margin: EdgeInsets.fromLTRB(5, 10, 5, 0),
+                color: Colors.grey,
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.ac_unit,
+                      size: 20,
+                      color: Colors.black,
+                    ),
+                    SizedBox(
+                      width: 50,
+                    ),
+                    Text(
+                      '1st row',
+                      style: TextStyle(fontFamily: 'LobsterTwo', fontSize: 20),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                padding: EdgeInsets.all(20),
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+                color: Colors.limeAccent,
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.account_box_rounded,
+                      size: 20,
+                      color: Colors.black,
+                    ),
+                    SizedBox(
+                      width: 50,
+                    ),
+                    Text(
+                      '2nd row',
+                      style: TextStyle(fontFamily: 'LobsterTwo2', fontSize: 20),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                padding: EdgeInsets.all(20),
+                margin: EdgeInsets.fromLTRB(5, 5, 5, 10),
+                color: Colors.grey,
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.account_balance,
+                      size: 20,
+                      color: Colors.black,
+                    ),
+                    SizedBox(
+                      width: 50,
+                    ),
+                    Text(
+                      '3rd row',
+                      style: TextStyle(fontFamily: 'LobsterTwo3', fontSize: 20),
+                    ),
+                  ],
+                ),
+              ),
+              Card(
+                color: Colors.limeAccent,
+                margin: EdgeInsets.fromLTRB(5, 10, 5, 10),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.account_circle_rounded,
+                      size: 35,
+                      color: Colors.black,
+                    ),
+                    SizedBox(
+                      width: 50,
+                    ),
+                    Text(
+                      '4th row',
+                      style:
+                          TextStyle(fontStyle: FontStyle.italic, fontSize: 25),
+                    ),
+                  ],
+                ),
+              ),
+              Card(
+                color: Colors.grey,
+                margin: EdgeInsets.fromLTRB(5, 10, 5, 10),
+                child: Row(
+                  children: [
+                    Image(
+                      image:
+                          AssetImage('images/20150702- hamburger- - Copy.jpg'),
+                      width: 80,
+                      height: 60,
+                    ),
+                    SizedBox(
+                      width: 50,
+                    ),
+                    Text(
+                      'Beef Burger',
+                      style: TextStyle(fontFamily: 'LobsterTwo3', fontSize: 25),
+                    ),
+                  ],
+                ),
+              ),
+              Card(
+                color: Colors.limeAccent,
+                margin: EdgeInsets.fromLTRB(5, 10, 5, 10),
+                child: Row(
+                  children: [
+                    Image(
+                      image: AssetImage('images/download - Copy.jpg'),
+                      width: 80,
+                      height: 60,
+                    ),
+                    SizedBox(
+                      width: 50,
+                    ),
+                    Text(
+                      'Chicken burger',
+                      style: TextStyle(fontFamily: 'LobsterTwo3', fontSize: 25),
+                    ),
+                  ],
+                ),
+              ),
+              Card(
+                color: Colors.grey,
+                margin: EdgeInsets.fromLTRB(5, 10, 5, 10),
+                child: Row(
+                  children: [
+                    Image(
+                      image: AssetImage('images/download (2) - Copy.jpg'),
+                      width: 80,
+                      height: 60,
+                    ),
+                    SizedBox(
+                      width: 50,
+                    ),
+                    Text(
+                      'Fries',
+                      style: TextStyle(fontFamily: 'LobsterTwo3', fontSize: 25),
+                    ),
+                  ],
+                ),
+              ),
+              Card(
+                color: Colors.limeAccent,
+                margin: EdgeInsets.fromLTRB(5, 10, 5, 10),
+                child: Row(
+                  children: [
+                    Image(
+                      image: AssetImage('images/download (3) - Copy.jpg'),
+                      width: 80,
+                      height: 60,
+                    ),
+                    SizedBox(
+                      width: 50,
+                    ),
+                    Text(
+                      'Desserts',
+                      style: TextStyle(fontFamily: 'LobsterTwo3', fontSize: 25),
+                    ),
+                  ],
+                ),
+              ),
+              Card(
+                color: Colors.grey,
+                margin: EdgeInsets.fromLTRB(5, 10, 5, 10),
+                child: Row(
+                  children: [
+                    Image(
+                      image: AssetImage('images/soft-drinks - Copy.jpg'),
+                      width: 80,
+                      height: 60,
+                    ),
+                    SizedBox(
+                      width: 50,
+                    ),
+                    Text(
+                      'Soft Drinks',
+                      style: TextStyle(fontFamily: 'LobsterTwo3', fontSize: 25),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+//3rd session
+// Row(
+// children: <Widget> [
+// Column(
+// mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+// children: <Widget> [
+// Image(image: AssetImage('images/download - Copy.jpg'),
+// ),
+// Image(image: AssetImage('images/download (3) - Copy.jpg'),
+// ),
+// Image(image: AssetImage('images/download (2) - Copy.jpg'),
+// ),
+// ],
+// ),
+// Column(
+// mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+// children: <Widget> [
+// Text('chicken burger'),
+// Text('molten cake'),
+// Text('Fries'),
+// ],
+// ),
+// ],
+// ),
+
+//2nd session
+// body: Container(
+// color: Colors.grey,
+// width: 500,
+// height: 500,
+// padding: EdgeInsets.all(20),
+// margin: EdgeInsets.all(20),
+// child: Image(
+// image: AssetImage('images/download (3) - Copy.jpg'),
+// ),
+// ),
+
+//1st session
+// runApp(
+// MaterialApp(
+// home: Center(
+// child: Text('Hello noreen', textDirection: TextDirection.ltr),
+// ),
+// ),
+// );
+
+//Default code
 // class MyApp extends StatelessWidget {
 //   // This widget is the root of your application.
 //   @override

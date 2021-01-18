@@ -49,6 +49,13 @@ flutter:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
+  assets:
+    - images/download - Copy.jpg
+    - images/download (2) - Copy.jpg
+    - images/download (3) - Copy.jpg
+    - images/20150702- hamburger- - Copy.jpg
+    - images/soft-drinks - Copy.jpg
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
@@ -71,6 +78,17 @@ flutter:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
+
+  fonts:
+    - family: LobsterTwo
+      fonts:
+        - asset: fonts/LobsterTwo-Italic.ttf
+    - family: LobsterTwo2
+      fonts:
+        - asset: fonts/LobsterTwo-Bold.ttf
+    - family: LobsterTwo3
+      fonts:
+        - asset: fonts/LobsterTwo-BoldItalic.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
